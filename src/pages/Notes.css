@@ -1,0 +1,70 @@
+.product-card{
+   border-radius: 4px;
+    padding: 16px;
+    box-shadow: 10px 10px 8px 0px #000000a3;
+    height: 308px;
+    max-width: 93%;
+    transform: rotate(-6deg);
+    transition-duration: 0.5s;
+    background-color: #f7ffb9;
+    position: relative;
+    animation: slide-down 1s ease-out forwards;
+}
+.product-card:hover{
+    transform: scale(1.13);  
+}
+.delete-btn{
+    background-color: #000;
+    padding: 5px 8px 10px 9px;
+    border-radius: 50%;
+    position: absolute;
+    top: -21px;
+    left: -9px;
+}
+.main-heading{
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+}
+.description{
+    font-weight: 400;
+    font-style: italic;
+    line-height: 20px;
+    margin-top: 15px;
+}
+h6.status{
+    font-weight: 800;
+}
+.edit-btn,.delete-btn:hover{
+    cursor: pointer;
+}
+.modal-content{
+    background-color: #000000 !important;
+    color: #fff !important;
+    box-shadow: 0 0 16px 0 #f4ff7e;
+}
+button.add-note-btn,button.btn-close{
+    background-color: #f4ff7e;
+}
+@media only screen and (max-width:600px){
+    .product-card{
+        max-width: 86%;
+        margin: auto;
+    }
+}
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    /* transform: translateY(-3rem); */
+    margin-top: -10rem;
+  }
+  to {
+    opacity: 1;
+    /* transform: translateY(0); */
+    margin-top: 0;
+  }
+}
+
+/* =============== folding arrow ================ */
+
+
